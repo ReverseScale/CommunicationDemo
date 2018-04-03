@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4gh-vd-OFw">
+                                <rect key="frame" x="152" y="158.5" width="71" height="30"/>
+                                <state key="normal" title="sendEmail"/>
+                                <connections>
+                                    <action selector="sendEmailAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F58-Lf-cic"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ROg-MN-zDY">
+                                <rect key="frame" x="132" y="198.5" width="110" height="30"/>
+                                <state key="normal" title="sendEmailDetail"/>
+                                <connections>
+                                    <action selector="sendEmailDetailAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V3C-2J-gwH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n9G-Dt-hDs">
+                                <rect key="frame" x="139" y="278.5" width="96" height="30"/>
+                                <state key="normal" title="sendMessage"/>
+                                <connections>
+                                    <action selector="sendMessageAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gxc-8D-zSx"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ne7-kH-vQ4">
+                                <rect key="frame" x="120" y="318.5" width="135" height="30"/>
+                                <state key="normal" title="sendMessageDetail"/>
+                                <connections>
+                                    <action selector="sendMessageDetailAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ho8-Oy-dom"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d4g-RK-hfb">
+                                <rect key="frame" x="172" y="398.5" width="30" height="30"/>
+                                <state key="normal" title="call"/>
+                                <connections>
+                                    <action selector="callAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jP2-Ce-Juu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nPH-zt-oxh">
+                                <rect key="frame" x="124" y="438.5" width="126" height="30"/>
+                                <state key="normal" title="callUseCallprompt"/>
+                                <connections>
+                                    <action selector="callUseCallpromptAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rri-s5-0HA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fg4-yA-bLa">
+                                <rect key="frame" x="161" y="478.5" width="53" height="30"/>
+                                <state key="normal" title="callTest"/>
+                                <connections>
+                                    <action selector="callTestAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oT2-uK-dnT"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="邮件" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g00-wG-nAl">
+                                <rect key="frame" x="170" y="129.5" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="短信" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hmV-ka-DP7">
+                                <rect key="frame" x="170" y="249.5" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电话" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UD8-Or-XFE">
+                                <rect key="frame" x="170" y="369" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4gh-vd-OFw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="02q-l4-fKo"/>
+                            <constraint firstItem="ROg-MN-zDY" firstAttribute="top" secondItem="4gh-vd-OFw" secondAttribute="bottom" constant="10" id="7EV-J0-Xwb"/>
+                            <constraint firstItem="ne7-kH-vQ4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="82P-Z9-RBB"/>
+                            <constraint firstItem="n9G-Dt-hDs" firstAttribute="top" secondItem="hmV-ka-DP7" secondAttribute="bottom" constant="8" id="89d-Yd-hc2"/>
+                            <constraint firstItem="UD8-Or-XFE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8hh-eT-WbM"/>
+                            <constraint firstItem="n9G-Dt-hDs" firstAttribute="top" secondItem="ROg-MN-zDY" secondAttribute="bottom" constant="50" id="BX4-Jv-1rj"/>
+                            <constraint firstItem="Fg4-yA-bLa" firstAttribute="top" secondItem="nPH-zt-oxh" secondAttribute="bottom" constant="10" id="Eig-Ee-XwW"/>
+                            <constraint firstItem="d4g-RK-hfb" firstAttribute="top" secondItem="ne7-kH-vQ4" secondAttribute="bottom" constant="50" id="NQk-1T-fCs"/>
+                            <constraint firstItem="ROg-MN-zDY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="O4j-Un-qIc"/>
+                            <constraint firstItem="d4g-RK-hfb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qvp-Ww-qT2"/>
+                            <constraint firstItem="nPH-zt-oxh" firstAttribute="top" secondItem="d4g-RK-hfb" secondAttribute="bottom" constant="10" id="So1-Wv-rJi"/>
+                            <constraint firstItem="ne7-kH-vQ4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bhz-fl-dS6"/>
+                            <constraint firstItem="ne7-kH-vQ4" firstAttribute="top" secondItem="n9G-Dt-hDs" secondAttribute="bottom" constant="10" id="c7x-mx-Qkx"/>
+                            <constraint firstItem="nPH-zt-oxh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="eJ7-16-JBj"/>
+                            <constraint firstItem="g00-wG-nAl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="gJk-89-Atb"/>
+                            <constraint firstItem="d4g-RK-hfb" firstAttribute="top" secondItem="UD8-Or-XFE" secondAttribute="bottom" constant="8" id="grf-sb-YLv"/>
+                            <constraint firstItem="Fg4-yA-bLa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hmz-Oq-Umj"/>
+                            <constraint firstItem="hmV-ka-DP7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iKK-gA-HQ0"/>
+                            <constraint firstItem="4gh-vd-OFw" firstAttribute="top" secondItem="g00-wG-nAl" secondAttribute="bottom" constant="8" id="my1-hJ-Q1b"/>
+                            <constraint firstItem="n9G-Dt-hDs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="y87-sq-sBR"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
