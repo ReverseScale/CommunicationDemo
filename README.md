@@ -103,8 +103,9 @@ Communication 文件接口：
 ![](http://og1yl0w9z.bkt.clouddn.com/18-4-4/99162420.jpg)
 
 ```objc
+// 基本调用
 [Communication messageToReceiver:@"10010"];
-
+// 传递内容参数
 [Communication messageToReceivers:@[@"10010", @"10086"] content:@"查询话费" delegateVc:self];
 ```
 
@@ -113,10 +114,11 @@ Communication 文件接口：
 ![](http://og1yl0w9z.bkt.clouddn.com/18-4-4/74452566.jpg)
 
 ```objc
+// 基本调用
 [Communication mailToReceiver:@"hello@icloud.com"];
 
+// 传递内容参数
 NSData *attachmentData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] pathForResource:@"Background" ofType:@"png"]];
-
 [Communication mailToReceivers:@[@"marry@qq.com", @"jack@qq.com"] copyers:@[@"tom@qq.com", @"bob@qq.com"] secretors:@[@"john@qq.com", @"gousheng@qq.com"] theme:@"周末请你吃饭" content:@"周末有空不，请你吃饭" contentIsHTML:NO attachment:attachmentData attachmentName:@"SunOddman" attachmentType:@"image/jpg" showInViewController:self];
 ```
 
@@ -125,9 +127,10 @@ NSData *attachmentData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] p
 ![](http://og1yl0w9z.bkt.clouddn.com/18-4-4/37839853.jpg)
 
 ```objc
+// 基本调用
 [Communication callToTel:@"10086"];
-
+// 呼叫提醒调用
 [Communication callToTelUseCallprompt:@"10086" ];
-
+// 测试方法调用
 [Communication callToTelUseWebView:@"10086" inViewController:self];
 ```
