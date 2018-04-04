@@ -8,16 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		348F476420720EAD008AD4D7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 348F476320720EAD008AD4D7 /* AppDelegate.m */; };
-		348F476720720EAD008AD4D7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 348F476620720EAD008AD4D7 /* ViewController.m */; };
 		348F476A20720EAD008AD4D7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 348F476820720EAD008AD4D7 /* Main.storyboard */; };
 		348F476C20720EAD008AD4D7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 348F476B20720EAD008AD4D7 /* Assets.xcassets */; };
-		348F476F20720EAD008AD4D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 348F476D20720EAD008AD4D7 /* LaunchScreen.storyboard */; };
 		348F477220720EAD008AD4D7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 348F477120720EAD008AD4D7 /* main.m */; };
 		348F477C20720EAD008AD4D7 /* CommunicationDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 348F477B20720EAD008AD4D7 /* CommunicationDemoTests.m */; };
 		348F478720720EAD008AD4D7 /* CommunicationDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 348F478620720EAD008AD4D7 /* CommunicationDemoUITests.m */; };
 		348F479620720EF4008AD4D7 /* Communication.m in Sources */ = {isa = PBXBuildFile; fileRef = 348F479520720EF4008AD4D7 /* Communication.m */; };
 		348F479820721021008AD4D7 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 348F479720721021008AD4D7 /* MessageUI.framework */; };
 		348F47BC20732EB4008AD4D7 /* Background.png in Resources */ = {isa = PBXBuildFile; fileRef = 348F47BB20732EB3008AD4D7 /* Background.png */; };
+		348F47C7207471E4008AD4D7 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 348F47C6207471E4008AD4D7 /* TableViewController.m */; };
+		348F47CB207474A5008AD4D7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 348F47C9207474A5008AD4D7 /* Default.png */; };
+		348F47CD20747512008AD4D7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 348F47CC20747512008AD4D7 /* LaunchScreen.storyboard */; };
 		361D679A6C0198653D481EF0 /* libPods-CommunicationDemoUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4856DA2F254DD51D6699814C /* libPods-CommunicationDemoUITests.a */; };
 		6FBCCA1306E18547751E47F2 /* libPods-CommunicationDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 80A2D96F9BE50B127DD4CC62 /* libPods-CommunicationDemo.a */; };
 		749B1107603D20E88DEC4636 /* libPods-CommunicationDemoTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F8827584449277B3C033118 /* libPods-CommunicationDemoTests.a */; };
@@ -48,11 +49,8 @@
 		348F475F20720EAD008AD4D7 /* CommunicationDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CommunicationDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		348F476220720EAD008AD4D7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		348F476320720EAD008AD4D7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		348F476520720EAD008AD4D7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		348F476620720EAD008AD4D7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		348F476920720EAD008AD4D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		348F476B20720EAD008AD4D7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		348F476E20720EAD008AD4D7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		348F477020720EAD008AD4D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		348F477120720EAD008AD4D7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		348F477720720EAD008AD4D7 /* CommunicationDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommunicationDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -65,6 +63,10 @@
 		348F479520720EF4008AD4D7 /* Communication.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Communication.m; sourceTree = "<group>"; };
 		348F479720721021008AD4D7 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		348F47BB20732EB3008AD4D7 /* Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Background.png; sourceTree = "<group>"; };
+		348F47C5207471E4008AD4D7 /* TableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
+		348F47C6207471E4008AD4D7 /* TableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		348F47C9207474A5008AD4D7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		348F47CC20747512008AD4D7 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A3DA0502E08D52EF450F903 /* Pods-CommunicationDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CommunicationDemoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CommunicationDemoTests/Pods-CommunicationDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		4856DA2F254DD51D6699814C /* libPods-CommunicationDemoUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommunicationDemoUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		80A2D96F9BE50B127DD4CC62 /* libPods-CommunicationDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CommunicationDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,14 +141,15 @@
 			children = (
 				348F476220720EAD008AD4D7 /* AppDelegate.h */,
 				348F476320720EAD008AD4D7 /* AppDelegate.m */,
-				348F476520720EAD008AD4D7 /* ViewController.h */,
-				348F476620720EAD008AD4D7 /* ViewController.m */,
 				348F479420720EF4008AD4D7 /* Communication.h */,
 				348F479520720EF4008AD4D7 /* Communication.m */,
+				348F47C5207471E4008AD4D7 /* TableViewController.h */,
+				348F47C6207471E4008AD4D7 /* TableViewController.m */,
 				348F47BB20732EB3008AD4D7 /* Background.png */,
 				348F476820720EAD008AD4D7 /* Main.storyboard */,
 				348F476B20720EAD008AD4D7 /* Assets.xcassets */,
-				348F476D20720EAD008AD4D7 /* LaunchScreen.storyboard */,
+				348F47CC20747512008AD4D7 /* LaunchScreen.storyboard */,
+				348F47C9207474A5008AD4D7 /* Default.png */,
 				348F477020720EAD008AD4D7 /* Info.plist */,
 				348F477120720EAD008AD4D7 /* main.m */,
 			);
@@ -299,10 +302,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				348F476F20720EAD008AD4D7 /* LaunchScreen.storyboard in Resources */,
 				348F47BC20732EB4008AD4D7 /* Background.png in Resources */,
 				348F476C20720EAD008AD4D7 /* Assets.xcassets in Resources */,
 				348F476A20720EAD008AD4D7 /* Main.storyboard in Resources */,
+				348F47CD20747512008AD4D7 /* LaunchScreen.storyboard in Resources */,
+				348F47CB207474A5008AD4D7 /* Default.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -478,8 +482,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				348F479620720EF4008AD4D7 /* Communication.m in Sources */,
-				348F476720720EAD008AD4D7 /* ViewController.m in Sources */,
 				348F477220720EAD008AD4D7 /* main.m in Sources */,
+				348F47C7207471E4008AD4D7 /* TableViewController.m in Sources */,
 				348F476420720EAD008AD4D7 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -522,14 +526,6 @@
 				348F476920720EAD008AD4D7 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		348F476D20720EAD008AD4D7 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				348F476E20720EAD008AD4D7 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

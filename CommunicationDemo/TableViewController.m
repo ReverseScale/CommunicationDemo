@@ -1,46 +1,51 @@
 //
-//  ViewController.m
+//  TableViewController.m
 //  CommunicationDemo
 //
-//  Created by WhatsXie on 2018/4/2.
+//  Created by WhatsXie on 2018/4/4.
 //  Copyright © 2018年 WhatsXie. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "TableViewController.h"
 #import "Communication.h"
+@interface TableViewController ()
 
-@interface ViewController ()
 @end
 
-@implementation ViewController
+@implementation TableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
-- (IBAction)sendEmailAction:(id)sender {
-    [self sendEmailFunc];
-}
-- (IBAction)sendEmailDetailAction:(id)sender {
-    [self sendEmailDetailFunc];
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)sendMessageAction:(id)sender {
-    [self sendMessageFunc];
-}
-- (IBAction)sendMessageDetailAction:(id)sender {
-    [self sendMessageDetailFunc];
-}
-
-- (IBAction)callAction:(id)sender {
-    [self callFunc];
-}
-- (IBAction)callUseCallpromptAction:(id)sender {
-    [self callTelUseCallFunc];
-}
-- (IBAction)callTestAction:(id)sender {
-    [self callTestFunc];
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    if (indexPath.section == 0) {
+        if (indexPath.row == 0) {
+            [self sendEmailFunc];
+        } else {
+            [self sendEmailDetailFunc];
+        }
+    } else if (indexPath.section == 1) {
+        if (indexPath.row == 0) {
+            [self sendMessageFunc];
+        } else {
+            [self sendMessageDetailFunc];
+        }
+    } else {
+        if (indexPath.row == 0) {
+            [self callFunc];
+        } else if (indexPath.row == 1) {
+            [self callTelUseCallFunc];
+        } else {
+            [self callTestFunc];
+        }
+    }
 }
 
 #pragma mark - 调用工具类
@@ -79,12 +84,5 @@
     // 这个方法功能需要测试
     [Communication callToTelUseWebView:@"10086" inViewController:self];
 }
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
 
 @end
