@@ -96,14 +96,14 @@ Communication 文件接口：
 ```
 
 #### 调用方法
-短信
+1)调用短信
 ```objc
 [Communication messageToReceiver:@"10010"];
 
 [Communication messageToReceivers:@[@"10010", @"10086"] content:@"查询话费" delegateVc:self];
 ```
 
-邮件
+2)调用邮件
 ```objc
 [Communication mailToReceiver:@"hello@icloud.com"];
 
@@ -112,7 +112,7 @@ NSData *attachmentData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] p
 [Communication mailToReceivers:@[@"marry@qq.com", @"jack@qq.com"] copyers:@[@"tom@qq.com", @"bob@qq.com"] secretors:@[@"john@qq.com", @"gousheng@qq.com"] theme:@"周末请你吃饭" content:@"周末有空不，请你吃饭" contentIsHTML:NO attachment:attachmentData attachmentName:@"SunOddman" attachmentType:@"image/jpg" showInViewController:self];
 ```
 
-电话
+3)调用电话
 ```objc
 [Communication callToTel:@"10086"];
 
