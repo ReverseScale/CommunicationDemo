@@ -2,6 +2,8 @@
 
 ### 调用原生通信封装
 
+![](http://og1yl0w9z.bkt.clouddn.com/18-4-4/35955797.jpg)
+
 Communication 文件接口：
 ```objc
 #pragma mark - 发短信
@@ -97,6 +99,9 @@ Communication 文件接口：
 
 #### 调用方法
 1)调用短信
+
+![](http://og1yl0w9z.bkt.clouddn.com/18-4-4/55396342.jpg)
+
 ```objc
 [Communication messageToReceiver:@"10010"];
 
@@ -104,6 +109,9 @@ Communication 文件接口：
 ```
 
 2)调用邮件
+
+![](http://og1yl0w9z.bkt.clouddn.com/18-4-4/36482359.jpg)
+
 ```objc
 [Communication mailToReceiver:@"hello@icloud.com"];
 
@@ -113,6 +121,9 @@ NSData *attachmentData = [NSData dataWithContentsOfFile:[[NSBundle mainBundle] p
 ```
 
 3)调用电话
+
+![](http://og1yl0w9z.bkt.clouddn.com/18-4-4/8673986.jpg)
+
 ```objc
 [Communication callToTel:@"10086"];
 
